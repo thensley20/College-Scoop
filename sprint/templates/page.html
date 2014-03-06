@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>This is the page</h1>
+<form method = "post" action = "/another_page2">
+	<p>Enter Club Name:
+	<input type = "text" id = "name" name = "username"/><br>
+	     Describe Activity:
+	<input type = "text" id = "pass" name = "activity" style = "width:254px; height:44px;"/>
+	<input type ="submit" value = "Submit"/>
+</form>
+{% endblock %}
