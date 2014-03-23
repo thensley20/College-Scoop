@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Welcome to the Scoop</h1>
+<form method = "post" action = "/login">
+  <h5>Enter Desired Username:</h5>
+  <input type = "text" id = "username" name = "ruser"/><br>
+  <br/>
+  <h5>Enter Password:</h5>
+  <input type = "password" id = "password" name = "rpass"/>
+  <br/><br/>
+  <input type ="submit" value = "Register"/>
+</form>
+
+{% endblock %}

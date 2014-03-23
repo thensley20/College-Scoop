@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Activities</h1>
+<form method = "post" action = "/another_page2">
+  <input type = "text" value = "'activity name'" id = "username" name = "vote"/>
+  <input type ="submit" value = "Upvote"name = 'up'/>
+  <input type ="submit" value = "Downvote"name = 'down'/>
+</form>
+<table>
+  <tr><th>CLUB</th><th>ACTIVITY</th><th>RANK</th></tr>
+{% for entry in collegescoop_tbl %}
+<tr><td>{{entry['postername']}}</td><td>{{entry['activity']}}</td>
+  <td>{{entry['rank']}}</td></tr>
+{% endfor %}
+</table>
+
+{% endblock %}
