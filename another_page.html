@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style type="text/css" media="screen">
+ table { border: 1px solid black;float:left;width:250px;}
+ #table_container{width:300px;margin:0 auto;}
+</style>
+
+<h1>Activities</h1>
+<form method = "post" action = "/another_page">
+  <input type = "text" id = "username" name = "vote"/>
+  <input type ="submit" value = "Upvote"name = 'up'/>
+  <input type ="submit" value = "Downvote"name = 'down'/>
+</form>
+<table>
+  <tr><th>CLUB</th></tr>
+{% for entry in club_name %}
+<tr><td>{{entry['postername']}}</td></tr>
+{% endfor %}
+</table>
+
+<table>
+  <tr><th>ACTIVITY</th><th>RANK</th></tr>
+{% for entry in activity %}
+<tr><td>{{entry['activity']}}</td>
+  <td>{{entry['rank']}}</td></tr>
+{% endfor %}
+</table>
+
+{% endblock %}
