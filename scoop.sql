@@ -22,13 +22,18 @@ CREATE TABLE IF NOT EXISTS club_name
   
 );
 
+CREATE INDEX all_posternames ON club_name(postername);
+
 CREATE TABLE IF NOT EXISTS activity
 (
   activity_id INT NOT NULL AUTO_INCREMENT,
+  club_id INT,
   activity TEXT,
   rank INT,
   PRIMARY KEY(activity_id)
 
 );
+
+CREATE INDEX all_activities ON activity(activity);
 
 

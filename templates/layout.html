@@ -15,19 +15,20 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">College<span class="logo_colour">Scoop</span></a></h1>
-          <h2>UMW Club Activity Finder</h2>
+          <h1><a href="/">College<span class="logo_colour">Scoop</span></a></h1>
+          <h2>UMW Club Activity Finder <a href="/login">login</a>  <a href="/logout">logout</a></h2>
         </div>
       </div>
       <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           
-          <li  {% if selectedMenu == "Home" %} class="selected" {% endif %}  >
+          <li {% if selectedMenu == "Home" %} class="selected" {% endif %} >
             <a href="/">Home</a></li>
-          <li  {% if selectedMenu == "Add" %} class="selected" {% endif %}  >
+          <li {% if selectedMenu == "Add" %} class="selected" {% endif %} >
             <a href="/page">Post Activity</a></li>
           <li><a href="/another_page2">See Activities</a></li>
+          <li><a href="/search">Search For Clubs</a></li>
         </ul>
       </div>
     </div>
