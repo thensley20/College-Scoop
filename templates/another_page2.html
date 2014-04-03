@@ -1,13 +1,13 @@
-{% extends "layout.html" %}
- 
- {% block content %}
- <h1>Activities</h1>
- <table>
-   <tr><th>CLUB</th><th>ACTIVITY</th><th>RANK</th></tr>
- {% for entry in collegescoop_tbl %} 
- <tr><td>{{entry['postername']}}</td><td>{{entry['activity']}}</td>
-   <td>{{entry['rank']}}</td></tr>
- {% endfor %}
- </table>
- 
- {% endblock %}
++{% extends "layout.html" %}
+ +
+ +{% block content %}
+ +<h1>Activities</h1>
+ +<table>
+ +  <tr><th>CLUB</th><th>ACTIVITY</th><th>RANK</th></tr>
+ +{% for entry in collegescoop_tbl %} 
+ +<tr><td>{{entry['postername']}}</td><td>{{entry['activity']}}</td>
+ +  <td>{{entry['rank']}}</td></tr>
+ +{% endfor %}
+ +</table>
+ +
+ +{% endblock %}
