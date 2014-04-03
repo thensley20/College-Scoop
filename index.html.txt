@@ -1,8 +1,0 @@
-{% extends "layout.html" %}
-
-{% block content %}
-<h1>Welcome to College Scoop!</h1>
-</br>
-<h2>Where you can find out what club activities are happening all over campus!</h2>
-
-{% endblock %}
